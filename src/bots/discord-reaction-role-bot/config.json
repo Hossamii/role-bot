@@ -1,70 +1,70 @@
 {
-  "channelId": "1492961173765755032",
+  "channelId": "1493961173765755032",
   "embedTitle": "Get Your Roles",
-  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
-  "embedColor": 300960,
+  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts.",
+  "embedColor": 303960,
   "policy": "any",
   "buttons": [
     {
-      "label": "<:arrowup:1493417500929560617> Exclusive Value",
+      "label": "<:arrowup:1493417500020560617> Exclusive Value",
       "emoji": "149327267660558310",
-      "description": "• Posts from high-value users",
+      "description": "- Posts from high-value users",
       "style": "PRIMARY",
-      "roleIds": ["1493310300484036606"]
+      "roleIds": ["1493318300484036608"]
     },
     {
-      "label": "High Value",
+      "label": "<:arrowup:1493417505190973562> High Value",
       "emoji": "149327267660558310",
-      "description": "• Posts from mid-value users",
+      "description": "- Posts from mid-value users",
       "style": "PRIMARY",
       "roleIds": ["149327267660558310"]
     },
     {
-      "label": "Regular Value",
+      "label": "<:arrowdown:1493417509582405652> Regular Value",
       "emoji": "149331300146889400",
-      "description": "• Posts from low-value users",
+      "description": "- Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149331300146889400"]
     },
     {
-      "label": "Low Value",
+      "label": "<:arrowdown:1493417507485384815> Low Value",
       "emoji": "149365667393370442",
-      "description": "• Posts from low-value users",
+      "description": "- Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149365667393370442"]
     },
     {
-      "label": "CS2",
+      "label": "<:dahood:1493320846352187536> CS2",
       "emoji": "1493273222864239385",
-      "description": "• Posts from users with $1, $5, $10+ in CS2 skins",
+      "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
       "style": "PRIMARY",
       "roleIds": ["1493273222864239385"]
     },
     {
-      "label": "Robux",
-      "emoji": "149331799028889010",
-      "description": "• Posts from users Robux worth 1 to 1M and more",
+      "label": "<:rwrobux:1493320810860122142> Robux",
+      "emoji": "149331799828889010",
+      "description": "- Posts from users Robux worth 1 to 1M and more",
       "style": "PRIMARY",
-      "roleIds": ["149331799028889010"]
+      "roleIds": ["149331799828889010"]
     },
     {
-      "label": "Exchanges",
+      "label": "<:crypto:1493320291030405120> Exchanges",
       "emoji": "149327315157076668",
-      "description": "• Posts from users Cryptocurrencies worth 1 to 500k",
+      "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
       "style": "PRIMARY",
       "roleIds": ["149327315157076668"]
     },
     {
-      "label": "Discord",
+      "label": "<:discord:1493315705188122757> Discord",
       "emoji": "1493273202704977051",
-      "description": "• Posts from users with Discord Accounts, Nitros or boosts and more",
+      "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
       "style": "PRIMARY",
       "roleIds": ["1493273202704977051"]
     },
     {
-      "label": "Social Media",
+      "label": "<:ig:1493320330809315533> Social Media",
       "emoji": "1493334335497961642",
-      "description": "• Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
+      "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to f",
       "style": "PRIMARY",
       "roleIds": ["1493334335497961642"]
     }
