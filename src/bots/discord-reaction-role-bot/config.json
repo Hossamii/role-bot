@@ -6,7 +6,7 @@
   "policy": "any",
   "buttons": [
     {
-      "label": "<:arrowup:1493417500020560617> Exclusive Value",
+      "label": "\<:arrowup:1493417500929560617> Exclusive Value",
       "emoji": "149327267660558310",
       "description": "- Posts from high-value users",
       "style": "PRIMARY",
