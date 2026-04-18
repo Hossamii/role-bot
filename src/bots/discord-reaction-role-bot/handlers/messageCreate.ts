@@ -1,48 +1,90 @@
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require("discord.js");
-const { getConfig } = require("../util/getConfig");
+import { 
+    Message, 
+    Client, 
+    BaseGuildTextChannel, 
+    ContainerBuilder, 
+    TextDisplayBuilder, 
+    SeparatorBuilder, 
+    SeparatorSpacingSize, 
+    ButtonStyle, 
+    ButtonBuilder,
+    MessageFlags
+} from "discord.js";
+import { getConfig } from "../util/getConfig";
+import { Config, ButtonConfig } from "../types";
 
-module.exports = async (client, message) => {
-    if (!message || !message.author || message.author.bot) return;
+// خريطة لتحديد ألوان الأزرار
+const styleMap: Record<string, ButtonStyle> = {
+    PRIMARY: ButtonStyle.Primary,
+    SECONDARY: ButtonStyle.Secondary,
+    SUCCESS: ButtonStyle.Success,
+    DANGER: ButtonStyle.Danger,
+};
 
-    if (message.content === 'Y') {
-        try {
-            const config = getConfig();
-            if (!config || !config[0]) return;
+module.exports = async (client: Client, message: Message): Promise<void> => {
+    // تجاهل رسائل البوتات أو الرسائل التي ليست حرف Y
+    if (message.author.bot || message.content !== "Y") return;
 
-            const data = config[0];
-            const embed = new EmbedBuilder()
-                .setTitle(data.embedTitle || "الرتب")
-                .setDescription(data.embedDescription || "اختر رتبتك من الأزرار أدناه")
-                .setColor(data.embedColor || "#0099ff");
+    try {
+        const rawConfigs = getConfig();
+        const configs = (Array.isArray(rawConfigs) ? rawConfigs : [rawConfigs]) as Config[];
 
-            const rows = [];
-            let currentRow = new ActionRowBuilder();
+        for (const config of configs) {
+            // التحقق من أن القناة هي القناة الصحيحة المذكورة في الإعدادات
+            if (message.channelId !== config.channelId) continue;
 
-            data.buttons.forEach((btn, index) => {
-                const cleanLabel = btn.label.replace(/##/g, "").replace(/[:^:]+:/g, "").trim();
-                const button = new ButtonBuilder()
-                    .setLabel(cleanLabel)
-                    .setStyle(ButtonStyle.Primary)
-                    .setCustomId(`role_${index}`);
+            const textChannel = message.channel as BaseGuildTextChannel;
 
-                const emojiMatch = btn.label.match(/:([^\s:]+):/);
-                if (emojiMatch) button.setEmoji(emojiMatch[0]);
+            // مسح رسالة المستخدم (حرف Y)
+            await message.delete().catch(() => {});
 
-                if (currentRow.components.length < 5) {
-                    currentRow.addComponents(button);
-                } else {
-                    rows.push(currentRow);
-                    currentRow = new ActionRowBuilder().addComponents(button);
+            // بناء لوحة الأزرار (نفس المنطق المستخدم في ready.ts)
+            const container = new ContainerBuilder();
+            
+            if (config.embedColor) {
+                container.setAccentColor(config.embedColor);
+            }
+
+            container.addTextDisplayComponents(
+                new TextDisplayBuilder().setContent(
+                    `## ${config.embedTitle}\n${config.embedDescription}`
+                )
+            );
+
+            container.addSeparatorComponents(
+                new SeparatorBuilder().setSpacing(SeparatorSpacingSize.Large).setDivider(true)
+            );
+
+            config.buttons.forEach((btn: ButtonConfig, btnIndex: number) => {
+                const section = new SectionBuilder()
+                    .addTextDisplayComponents(
+                        new TextDisplayBuilder().setContent(`### ${btn.label}\n${btn.description}`)
+                    )
+                    .setButtonAccessory(
+                        new ButtonBuilder()
+                            .setCustomId(`role_${btnIndex}`)
+                            .setLabel("Get Alerts")
+                            .setStyle(styleMap[btn.style] ?? ButtonStyle.Primary)
+                    );
+                
+                container.addSectionComponents(section);
+
+                if (btnIndex < config.buttons.length - 1) {
+                    container.addSeparatorComponents(
+                        new SeparatorBuilder().setSpacing(SeparatorSpacingSize.Small).setDivider(true)
+                    );
                 }
             });
 
-            if (currentRow.components.length > 0) rows.push(currentRow);
+            // إرسال اللوحة للقناة
+            await textChannel.send({
+                components: [container],
+                flags: [MessageFlags.IsComponentsV2]
+            });
 
-            await message.channel.send({ embeds: [embed], components: rows });
-            await message.delete().catch(() => {});
-
-        } catch (error) {
-            console.error("Error in Y command:", error);
+            console.log(`Sent panel to channel ${config.channelId} via Y command.`);
         }
+    } catch (err: any) {
+        console.error(`Error handling Y command: ${err.message}`);
     }
 };
