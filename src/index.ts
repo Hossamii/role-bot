@@ -40,12 +40,14 @@ for (const botFolder of botFolders) {
 }
 
 const client = new Client({
-  intents: [
+    intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.GuildMessageReactions,
     GatewayIntentBits.GuildMembers,
+    GatewayIntentBits.MessageContent, // ضيف السطر ده هنا
   ],
+
   partials: [Partials.Message, Partials.Channel, Partials.Reaction],
 });
 
