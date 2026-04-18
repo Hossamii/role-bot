@@ -1,65 +1,63 @@
-[
-  {
-    "channelId": "1492961173765755032",
-    "embedTitle": "Get Your Roles",
-    "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
-    "embedColor": 300969,
-    "policy": "any",
-    "buttons": [
-      {
-        "label": ":arrowup: ## Exclusive Value",
-        "description": "- Posts from high-value users",
-        "style": "PRIMARY",
-        "roleIds": ["149331800848408606"]
-      },
-      {
-        "label": ":arrowup~1: ## High Value",
-        "description": "- Posts from mid-value users",
-        "style": "PRIMARY",
-        "roleIds": ["149327267660358310"]
-      },
-      {
-        "label": ":arrowdown: ## Regular Value",
-        "description": "- Posts from low-value users",
-        "style": "PRIMARY",
-        "roleIds": ["149331800146889400"]
-      },
-      {
-        "label": ":arrowdown~1: ## Low Value",
-        "description": "- Posts from low-value users",
-        "style": "PRIMARY",
-        "roleIds": ["149365667393870442"]
-      },
-      {
-        "label": ":dahood: ## CS2",
-        "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
-        "style": "PRIMARY",
-        "roleIds": ["149327322266429385"]
-      },
-      {
-        "label": ":rwrobux: ## Robux",
-        "description": "- Posts from users Robux worth 1 to 1M and more",
-        "style": "PRIMARY",
-        "roleIds": ["149331799028889010"]
-      },
-      {
-        "label": ":crypto: ## Exchanges",
-        "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
-        "style": "PRIMARY",
-        "roleIds": ["1493273151570706668"]
-      },
-      {
-        "label": ":discord: ## Discord",
-        "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
-        "style": "PRIMARY",
-        "roleIds": ["1493273292704977051"]
-      },
-      {
-        "label": ":ig: ## Social Media",
-        "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X...",
-        "style": "PRIMARY",
-        "roleIds": ["1493334335497961642"]
-      }
-    ]
-  }
-]
+{
+  "channelId": "1492961173765755032",
+  "embedTitle": "Get Your Roles",
+  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
+  "embedColor": 300960,
+  "policy": "any",
+  "buttons": [
+    {
+      "label": "<:arrowup:1493310300484036606> Exclusive Value",
+      "description": "- Posts from high-value users",
+      "style": "PRIMARY",
+      "roleIds": ["1493310300484036606"]
+    },
+    {
+      "label": "<:arrowup~1:149327267660558310> High Value",
+      "description": "- Posts from mid-value users",
+      "style": "PRIMARY",
+      "roleIds": ["149327267660558310"]
+    },
+    {
+      "label": "<:arrowdown:149331300146889400> Regular Value",
+      "description": "- Posts from low-value users",
+      "style": "PRIMARY",
+      "roleIds": ["149331300146889400"]
+    },
+    {
+      "label": "<:arrowdown~1:149365667393370442> Low Value",
+      "description": "- Posts from low-value users",
+      "style": "PRIMARY",
+      "roleIds": ["149365667393370442"]
+    },
+    {
+      "label": "<:dahood:1493273222864239385> CS2",
+      "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
+      "style": "PRIMARY",
+      "roleIds": ["1493273222864239385"]
+    },
+    {
+      "label": "<:rwrobux:149331799028889010> Robux",
+      "description": "- Posts from users Robux worth 1 to 1M and more",
+      "style": "PRIMARY",
+      "roleIds": ["149331799028889010"]
+    },
+    {
+      "label": "<:crypto:149327315157076668> Exchanges",
+      "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
+      "style": "PRIMARY",
+      "roleIds": ["149327315157076668"]
+    },
+    {
+      "label": "<:discord:1493273202704977051> Discord",
+      "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
+      "style": "PRIMARY",
+      "roleIds": ["1493273202704977051"]
+    },
+    {
+      "label": "<:ig:1493334335497961642> Social Media",
+      "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
+      "style": "PRIMARY",
+      "roleIds": ["1493334335497961642"]
+    }
+  ]
+}
