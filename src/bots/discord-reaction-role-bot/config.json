@@ -27,6 +27,20 @@
       "roleIds": ["149331300146889400"]
     },
     {
+      "label": "Low Value",
+      "emoji": "<:arrowdown:149365667393370442>",
+      "description": "<:arrowdown:149365667393370442> Posts from low-value users",
+      "style": "PRIMARY",
+      "roleIds": ["149365667393370442"]
+    },
+    {
+      "label": "CS2",
+      "emoji": "<:dahood:1493273222864239385>",
+      "description": "<:dahood:1493273222864239385> CS2\n- Posts from users with $1, $5, $10+ in CS2 skins",
+      "style": "PRIMARY",
+      "roleIds": ["1493273222864239385"]
+    },
+    {
       "label": "Robux",
       "emoji": "<:rwrobux:149331799028889010>",
       "description": "<:rwrobux:149331799028889010> Robux\n- Posts from users Robux worth 1 to 1M and more",
