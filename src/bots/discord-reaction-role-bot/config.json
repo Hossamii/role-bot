@@ -1,46 +1,64 @@
 [
   {
-    "channelId": "1492961173765755032",
+    "channelId": "1492861173765755032",
     "embedTitle": "Get Your Roles",
-    "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Get alerts\" button under your preferred category to join.",
-    "embedColor": 800909,
+    "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
+    "embedColor": 300969,
     "policy": "any",
     "buttons": [
       {
-        "label": "<:arrowup:1493417500929560617> ## Exclusive Value",
+        "label": ":arrowup: ## Exclusive Value",
         "description": "- Posts from high-value users",
         "style": "PRIMARY",
-        "roleIds": ["1493318000848408606"]
+        "roleIds": ["149331800848408606"]
       },
       {
-        "label": "<:arrowup:1493417505190973562> ## High Value",
+        "label": ":arrowup~1: ## High Value",
         "description": "- Posts from mid-value users",
         "style": "PRIMARY",
-        "roleIds": ["1493272676603658310"]
+        "roleIds": ["149327267660358310"]
       },
       {
-        "label": "Regular Value",
-        "description": "- Posts from users with 100,000+ value in Limiteds",
+        "label": ":arrowdown: ## Regular Value",
+        "description": "- Posts from low-value users",
         "style": "PRIMARY",
-        "roleIds": ["1493318001468899490"]
+        "roleIds": ["149331800146889400"]
       },
       {
-        "label": "Low Value",
-        "description": "- Posts from users with 10,000+ value in Limiteds",
+        "label": ":arrowdown~1: ## Low Value",
+        "description": "- Posts from low-value users",
         "style": "PRIMARY",
-        "roleIds": ["1493656673938706442"]
+        "roleIds": ["149365667393870442"]
       },
       {
-        "label": "CS2",
-        "description": "- Posts from users with $100+ in CS2 skins",
+        "label": ":dahood: ## CS2",
+        "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
         "style": "PRIMARY",
-        "roleIds": ["1493273222664290385"]
+        "roleIds": ["149327322266429385"]
       },
       {
-        "label": "Robux",
-        "description": "- Posts from users with 100,000+ Robux",
+        "label": ":rwrobux: ## Robux",
+        "description": "- Posts from users Robux worth 1 to 1M and more",
         "style": "PRIMARY",
-        "roleIds": ["1493317990286889010"]
+        "roleIds": ["149331799028889010"]
+      },
+      {
+        "label": ":crypto: ## Exchanges",
+        "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
+        "style": "PRIMARY",
+        "roleIds": ["1493273151570706668"]
+      },
+      {
+        "label": ":discord: ## Discord",
+        "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
+        "style": "PRIMARY",
+        "roleIds": ["1493273292704977051"]
+      },
+      {
+        "label": ":ig: ## Social Media",
+        "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X...",
+        "style": "PRIMARY",
+        "roleIds": ["1493334335497961642"]
       }
     ]
   }
