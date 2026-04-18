@@ -6,54 +6,63 @@
   "policy": "any",
   "buttons": [
     {
+      "id": "btn_exclusive",
       "label": "<:arrowupp:1493417500929560617> Exclusive Value",
       "description": "- Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493272544252399648"]
     },
     {
+      "id": "btn_high",
       "label": "<:arrowup:1493417505190973562> High Value",
       "description": "- Posts from mid-value users",
       "style": "PRIMARY",
       "roleIds": ["1493272676603658310"]
     },
     {
+      "id": "btn_regular",
       "label": "<:arrowdown:1493417509582405652> Regular Value",
       "description": "- Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["1493272840265269469"]
     },
     {
+      "id": "btn_low",
       "label": "<:arrowdown:1493417507485384815> Low Value",
       "description": "- Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["1493272956527448276"]
     },
     {
+      "id": "btn_cs2",
       "label": "<:dahood:1493320846352187536> CS2",
       "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
       "style": "PRIMARY",
       "roleIds": ["1493273089356857354"]
     },
     {
+      "id": "btn_robux",
       "label": "<:rwrobux:1493320810860122142> Robux",
       "description": "- Posts from users Robux worth 1 to 1M and more",
       "style": "PRIMARY",
       "roleIds": ["1493273151570706668"]
     },
     {
+      "id": "btn_exchanges",
       "label": "<:crypto:1493320291030405120> Exchanges",
       "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
       "style": "PRIMARY",
       "roleIds": ["1493273222664290385"]
     },
     {
+      "id": "btn_discord",
       "label": "<:discord:1493315705188122757> Discord",
       "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
       "style": "PRIMARY",
       "roleIds": ["1493273292704977051"]
     },
     {
+      "id": "btn_social",
       "label": "<:ig:1493320330809315533> Social Media",
       "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
       "style": "PRIMARY",
