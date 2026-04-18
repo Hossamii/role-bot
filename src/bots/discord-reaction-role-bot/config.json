@@ -1,12 +1,12 @@
 {
   "channelId": "1492961173765755032",
   "embedTitle": "Get Your Roles",
-  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
+  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and never miss a deal.",
   "embedColor": 300960,
   "policy": "any",
   "buttons": [
     {
-      "label": "\:arrowup:  Exclusive Value",
+      "label": "<:arrowup:149327267660558310> Exclusive Value",
       "description": "- Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493310300484036606"]
