@@ -6,7 +6,7 @@
   "policy": "any",
   "buttons": [
     {
-      "label": "\:arrowup: Exclusive Value",
+      "label": "<:arrowup:1493310300484036606> Exclusive Value",
       "description": "- Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493310300484036606"]
@@ -52,12 +52,6 @@
       "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
       "style": "PRIMARY",
       "roleIds": ["1493273202704977051"]
-    },
-    {
-      "label": "<:ig:1493334335497961642> Social Media",
-      "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
-      "style": "PRIMARY",
-      "roleIds": ["1493334335497961642"]
     }
   ]
 }
