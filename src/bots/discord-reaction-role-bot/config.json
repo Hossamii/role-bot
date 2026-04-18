@@ -6,56 +6,51 @@
   "policy": "any",
   "buttons": [
     {
-      "label": "<:arrowup:149327267660558310> Exclusive Value",
-      "description": "- Posts from high-value users",
+      "label": "Exclusive Value",
+      "emoji": "<:arrowup:149327267660558310>",
+      "description": "<:arrowup:149327267660558310> Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493310300484036606"]
     },
     {
-      "label": "<:arrowup:149327267660558310> High Value",
-      "description": "- Posts from mid-value users",
+      "label": "High Value",
+      "emoji": "<:arrowup:149327267660558310>",
+      "description": "<:arrowup:149327267660558310> Posts from mid-value users",
       "style": "PRIMARY",
       "roleIds": ["149327267660558310"]
     },
     {
-      "label": "<:arrowdown:149331300146889400> Regular Value",
-      "description": "- Posts from low-value users",
+      "label": "Regular Value",
+      "emoji": "<:arrowdown:149331300146889400>",
+      "description": "<:arrowdown:149331300146889400> Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149331300146889400"]
     },
     {
-      "label": "<:arrowdown:149365667393370442> Low Value",
-      "description": "- Posts from low-value users",
-      "style": "PRIMARY",
-      "roleIds": ["149365667393370442"]
-    },
-    {
-      "label": "<:dahood:1493273222864239385> CS2",
-      "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
-      "style": "PRIMARY",
-      "roleIds": ["1493273222864239385"]
-    },
-    {
-      "label": "<:rwrobux:149331799028889010> Robux",
-      "description": "- Posts from users Robux worth 1 to 1M and more",
+      "label": "Robux",
+      "emoji": "<:rwrobux:149331799028889010>",
+      "description": "<:rwrobux:149331799028889010> Robux\n- Posts from users Robux worth 1 to 1M and more",
       "style": "PRIMARY",
       "roleIds": ["149331799028889010"]
     },
     {
-      "label": "<:crypto:149327315157076668> Exchanges",
-      "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
+      "label": "Exchanges",
+      "emoji": "<:crypto:149327315157076668>",
+      "description": "<:crypto:149327315157076668> Exchanges\n- Posts from users Cryptocurrencies worth 1 to 500k",
       "style": "PRIMARY",
       "roleIds": ["149327315157076668"]
     },
     {
-      "label": "<:discord:1493273202704977051> Discord",
-      "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
+      "label": "Discord",
+      "emoji": "<:discord:1493273202704977051>",
+      "description": "<:discord:1493273202704977051> Discord\n- Posts from users with Discord Accounts, Nitros or boosts and more",
       "style": "PRIMARY",
       "roleIds": ["1493273202704977051"]
     },
     {
-      "label": "<:ig:1493334335497961642> Social Media",
-      "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
+      "label": "Social Media",
+      "emoji": "<:ig:1493334335497961642>",
+      "description": "<:ig:1493334335497961642> Social Media\n- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X...",
       "style": "PRIMARY",
       "roleIds": ["1493334335497961642"]
     }
