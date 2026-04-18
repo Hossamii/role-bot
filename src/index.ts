@@ -56,9 +56,24 @@ for (const [eventName, handlers] of Object.entries(allHandlers)) {
     client.on(eventName, (...args: any[]) => handler(client, ...args));
   }
 }
+// 1. استدعاء الملف (تأكد من المسار)
+const messageHandler = require('./bots/discord-reaction-role-bot/handlers/messageCreate');
 
+// 2. سماع الرسائل (لازم يكون قبل سطر الـ login)
+client.on('messageCreate', async (message) => {
+    // السطر ده هيعرفنا في الـ Console لو البوت شاف رسالتك
+    console.log(`Message received: ${message.content}`);
+
+    try {
+        await messageHandler(message);
+    } catch (err) {
+        console.error("Error in message handler:", err);
+    }
+});
+
+// 3. تسجيل الدخول (دايماً خليه آخر سطر)
 client.login(TOKEN).then(() => {
-  console.log(`Bot logged in as ${client.user?.tag}`);
+    console.log(`Bot logged in as ${client.user?.tag}`);
 }).catch((err) => {
-  console.error("Failed to login:", err.message);
+    console.error("Failed to login:", err.message);
 });
