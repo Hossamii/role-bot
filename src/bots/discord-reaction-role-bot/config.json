@@ -6,7 +6,6 @@
   "policy": "any",
   "buttons": [
     {
-      "id": "exclusive_value",
       "label": "<:arrowupp:1493417500929560617> Exclusive Value",
       "emoji": "149327267660558310",
       "description": "- Posts from high-value users",
@@ -14,7 +13,6 @@
       "roleIds": ["1493272544252399648"]
     },
     {
-      "id": "high_value",
       "label": "<:arrowup:1493417505190973562> High Value",
       "emoji": "149327267660558310",
       "description": "- Posts from mid-value users",
@@ -22,7 +20,6 @@
       "roleIds": ["1493272676603658310"]
     },
     {
-      "id": "regular_value",
       "label": "<:arrowdown:1493417509582405652> Regular Value",
       "emoji": "149331300146889400",
       "description": "- Posts from low-value users",
@@ -30,7 +27,6 @@
       "roleIds": ["1493272840265269469"]
     },
     {
-      "id": "low_value",
       "label": "<:arrowdown:1493417507485384815> Low Value",
       "emoji": "149365667393370442",
       "description": "- Posts from low-value users",
@@ -38,7 +34,13 @@
       "roleIds": ["1493272956527448276"]
     },
     {
-      "id": "cs2",
+      "label": "---",
+      "emoji": "1493273222864239385",
+      "description": "Separator",
+      "style": "SECONDARY",
+      "roleIds": []
+    },
+    {
       "label": "<:dahood:1493320846352187536> CS2",
       "emoji": "1493273222864239385",
       "description": "- Posts from users with $1, $5, $10+ in CS2 skins",
@@ -46,7 +48,6 @@
       "roleIds": ["1493273089356857354"]
     },
     {
-      "id": "robux",
       "label": "<:rwrobux:1493320810860122142> Robux",
       "emoji": "149331799828889010",
       "description": "- Posts from users Robux worth 1 to 1M and more",
@@ -54,7 +55,6 @@
       "roleIds": ["1493273151570706668"]
     },
     {
-      "id": "exchanges",
       "label": "<:crypto:1493320291030405120> Exchanges",
       "emoji": "149327315157076668",
       "description": "- Posts from users Cryptocurrencies worth 1 to 500k",
@@ -62,7 +62,6 @@
       "roleIds": ["1493273222664290385"]
     },
     {
-      "id": "discord",
       "label": "<:discord:1493315705188122757> Discord",
       "emoji": "1493273202704977051",
       "description": "- Posts from users with Discord Accounts, Nitros or boosts and more",
@@ -70,7 +69,6 @@
       "roleIds": ["1493273292704977051"]
     },
     {
-      "id": "social_media",
       "label": "<:ig:1493320330809315533> Social Media",
       "emoji": "1493334335497961642",
       "description": "- Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
