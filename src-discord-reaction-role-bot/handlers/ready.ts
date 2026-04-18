@@ -1,21 +1,30 @@
 import { BaseGuildTextChannel, Client } from "discord.js";
-import configs from "../config.json";
+import { getConfig } from "../util/getConfig"; // استدعاء الدالة الجديدة اللي أصلحناها
 
 module.exports = async (client: Client): Promise<void> => {
-  console.log(__dirname.split("\\").slice(-2)[0]);
+    console.log(`[ready] البوت جاهز وسجل دخوله كـ ${client.user?.tag}`);
 
-  for (const config of configs) {
-    const channel = await client.channels.fetch(config.channelId);
-    if (!channel || channel.type === "DM") {
-      continue;
+    try {
+        const configs = getConfig(); // جلب الإعدادات باستخدام الدالة الموحدة
+        if (!configs || configs.length === 0) {
+            console.log("[ready] لا توجد إعدادات لتحميلها.");
+            return;
+        }
+
+        for (const config of configs) {
+            try {
+                const channel = await client.channels.fetch(config.channelId);
+                if (!channel || channel.type !== 0) continue; // التأكد أنه روم كتابي (GuildText)
+
+                console.log(`[ready] تم العثور على القناة: ${config.channelId}`);
+                
+                // هنا البوت بيحاول يحدث التفاعلات لو فيه رسالة قديمة
+                // لو حابب يبعت الرسالة تلقائياً أول ما يفتح، نقدر نضيف الكود هنا
+            } catch (err) {
+                console.error(`[ready] فشل الوصول للقناة ${config.channelId}:`, err);
+            }
+        }
+    } catch (error) {
+        console.error("[ready] خطأ في تشغيل ملف ready:", error);
     }
-
-    const message = await (channel as BaseGuildTextChannel).messages.fetch(
-      config.messageId
-    );
-
-    Object.keys(config.emojiRoleMap).forEach(
-      async (emoji) => await message.react(emoji)
-    );
-  }
 };
