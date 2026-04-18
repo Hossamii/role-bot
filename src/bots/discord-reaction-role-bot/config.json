@@ -1,0 +1,47 @@
+[
+  {
+    "channelId": "1492961173765755032",
+    "embedTitle": "Get Your Roles",
+    "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Get alerts\" button under your preferred category to join.",
+    "embedColor": 800909,
+    "policy": "any",
+    "buttons": [
+      {
+        "label": "<:arrowup:1493417500929560617> ## Exclusive Value",
+        "description": "- Posts from high-value users",
+        "style": "PRIMARY",
+        "roleIds": ["1493318000848408606"]
+      },
+      {
+        "label": "<:arrowup:1493417505190973562> ## High Value",
+        "description": "- Posts from mid-value users",
+        "style": "PRIMARY",
+        "roleIds": ["1493272676603658310"]
+      },
+      {
+        "label": "Regular Value",
+        "description": "- Posts from users with 100,000+ value in Limiteds",
+        "style": "PRIMARY",
+        "roleIds": ["1493318001468899490"]
+      },
+      {
+        "label": "Low Value",
+        "description": "- Posts from users with 10,000+ value in Limiteds",
+        "style": "PRIMARY",
+        "roleIds": ["1493656673938706442"]
+      },
+      {
+        "label": "CS2",
+        "description": "- Posts from users with $100+ in CS2 skins",
+        "style": "PRIMARY",
+        "roleIds": ["1493273222664290385"]
+      },
+      {
+        "label": "Robux",
+        "description": "- Posts from users with 100,000+ Robux",
+        "style": "PRIMARY",
+        "roleIds": ["1493317990286889010"]
+      }
+    ]
+  }
+]
