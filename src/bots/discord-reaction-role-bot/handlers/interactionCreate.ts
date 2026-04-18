@@ -1,16 +1,16 @@
 import { ButtonInteraction, Client } from "discord.js";
 import { ButtonRoleManager } from "../classes/ButtonRoleManager";
-import { getConfig } from "../util/getConfig"; // تم تغيير الاسم هنا من loadConfigs إلى getConfig
+import { getConfig } from "../util/getConfig"; // الاسم الجديد الموحد
 
 module.exports = async (client: Client, interaction: ButtonInteraction): Promise<void> => {
     if (!interaction.isButton()) return;
-    if (!interaction.customId.startsWith("role_")) return; // تأكد أن الـ ID يبدأ بـ role_ كما في ملف messageCreate
+    if (!interaction.customId.startsWith("role_")) return; // التأكد من الـ ID
 
     try {
-        const config = getConfig(); // تم تغيير الاسم هنا أيضاً
-        if (!config || !config[0]) return;
+        const configs = getConfig(); // جلب المصفوفة كاملة
+        if (!configs || configs.length === 0) return;
 
-        const data = config[0];
+        const data = configs[0]; // الوصول لأول عنصر في المصفوفة
         const buttonIndex = parseInt(interaction.customId.replace("role_", ""));
         const buttonConfig = data.buttons[buttonIndex];
 
