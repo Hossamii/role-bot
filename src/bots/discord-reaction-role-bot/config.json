@@ -1,70 +1,70 @@
 {
   "channelId": "1492961173765755032",
   "embedTitle": "Get Your Roles",
-  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and never miss a deal.",
+  "embedDescription": "Stay informed and never miss a beat! Use the interactive buttons below to customize your alerts and receive real-time notifications for the categories that matter most to you.\n\nWe currently offer live alerts for: Exclusive deals, High & Low value trades, Robux, and CS2 skins. Simply click the \"Notify Me\" button under your preferred category to join.",
   "embedColor": 300960,
   "policy": "any",
   "buttons": [
     {
       "label": "Exclusive Value",
       "emoji": "149327267660558310",
-      "description": "<:arrowup:149327267660558310> Posts from high-value users",
+      "description": "<:arrowup:149327267660558310> **Exclusive Value**\n• Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493310300484036606"]
     },
     {
       "label": "High Value",
       "emoji": "149327267660558310",
-      "description": "<:arrowup:149327267660558310> Posts from mid-value users",
+      "description": "<:arrowup:149327267660558310> **High Value**\n• Posts from mid-value users",
       "style": "PRIMARY",
       "roleIds": ["149327267660558310"]
     },
     {
       "label": "Regular Value",
       "emoji": "149331300146889400",
-      "description": "<:arrowdown:149331300146889400> Posts from low-value users",
+      "description": "<:arrowdown:149331300146889400> **Regular Value**\n• Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149331300146889400"]
     },
     {
       "label": "Low Value",
       "emoji": "149365667393370442",
-      "description": "<:arrowdown:149365667393370442> Posts from low-value users",
+      "description": "<:arrowdown:149365667393370442> **Low Value**\n• Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149365667393370442"]
     },
     {
       "label": "CS2",
       "emoji": "1493273222864239385",
-      "description": "<:dahood:1493273222864239385> Posts from users with $1, $5, $10+ in CS2 skins",
+      "description": "<:dahood:1493273222864239385> **CS2**\n• Posts from users with $1, $5, $10+ in CS2 skins",
       "style": "PRIMARY",
       "roleIds": ["1493273222864239385"]
     },
     {
       "label": "Robux",
       "emoji": "149331799028889010",
-      "description": "<:rwrobux:149331799028889010> Posts from users Robux worth 1 to 1M and more",
+      "description": "<:rwrobux:149331799028889010> **Robux**\n• Posts from users Robux worth 1 to 1M and more",
       "style": "PRIMARY",
       "roleIds": ["149331799028889010"]
     },
     {
       "label": "Exchanges",
       "emoji": "149327315157076668",
-      "description": "<:crypto:149327315157076668> Posts from users Cryptocurrencies worth 1 to 500k",
+      "description": "<:crypto:149327315157076668> **Exchanges**\n• Posts from users Cryptocurrencies worth 1 to 500k",
       "style": "PRIMARY",
       "roleIds": ["149327315157076668"]
     },
     {
       "label": "Discord",
       "emoji": "1493273202704977051",
-      "description": "<:discord:1493273202704977051> Posts from users with Discord Accounts, Nitros or boosts",
+      "description": "<:discord:1493273202704977051> **Discord**\n• Posts from users with Discord Accounts, Nitros or boosts and more",
       "style": "PRIMARY",
       "roleIds": ["1493273202704977051"]
     },
     {
       "label": "Social Media",
       "emoji": "1493334335497961642",
-      "description": "<:ig:1493334335497961642> Posts from users Social Media Facebook, TikTok, Instagram, X...",
+      "description": "<:ig:1493334335497961642> **Social Media**\n• Posts from users Social Media Facebook, TikTok, YouTube, Instagram, X, everything related to followers, likes, and comments",
       "style": "PRIMARY",
       "roleIds": ["1493334335497961642"]
     }
