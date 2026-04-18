@@ -12,7 +12,7 @@
       "roleIds": ["1493310300484036606"]
     },
     {
-      "label": "<:arrowup~1:149327267660558310> High Value",
+      "label": "<:arrowup:149327267660558310> High Value",
       "description": "- Posts from mid-value users",
       "style": "PRIMARY",
       "roleIds": ["149327267660558310"]
@@ -24,7 +24,7 @@
       "roleIds": ["149331300146889400"]
     },
     {
-      "label": "<:arrowdown~1:149365667393370442> Low Value",
+      "label": "<:arrowdown:149365667393370442> Low Value",
       "description": "- Posts from low-value users",
       "style": "PRIMARY",
       "roleIds": ["149365667393370442"]
