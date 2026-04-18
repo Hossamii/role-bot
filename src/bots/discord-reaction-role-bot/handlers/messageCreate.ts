@@ -1,60 +1,38 @@
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require("discord.js");
-const { getConfig } = require("../util/getConfig");
+const fs = require("fs");
+const path = require("path");
 
-module.exports = async (client, message) => {
+// تحديد مسار ملف الإعدادات
+const CONFIG_PATH = path.join(__dirname, "..", "config.json");
 
-    // التأكد إن الرسالة مش من بوت وإنها موجودة فعلاً
-    if (!message || !message.author || message.author.bot) return;
+/**
+ * دالة لتنظيف ملف الـ JSON لو فيه أخطاء بسيطة في التنسيق
+ */
+function autoFix(raw) {
+    if (!raw) return "";
+    return raw.replace(/(\s*\[\s*\]\s*,\s*)+/g, "\n").trim();
+}
 
-    // لو المحتوى هو حرف Y كابيتال
-    if (message.content === 'Y') {
-        try {
-            const config = getConfig(message); 
-            if (!config || !config[0]) return;
-
-            const data = config[0]; 
-
-            const embed = new EmbedBuilder()
-                .setTitle(data.embedTitle || "الرتب")
-                .setDescription(data.embedDescription || "اختر رتبتك من الأزرار أدناه")
-                .setColor(data.embedColor || "#0099ff");
-
-            const rows = [];
-            let currentRow = new ActionRowBuilder();
-
-            data.buttons.forEach((btn, index) => {
-                // تنظيف الاسم من أي رموز
-                const cleanLabel = btn.label.replace(/##/g, "").replace(/:[^:]+:/g, "").trim();
-                
-                const button = new ButtonBuilder()
-                    .setLabel(cleanLabel)
-                    .setStyle(ButtonStyle.Primary)
-                    .setCustomId(`role_${index}`);
-
-                // إضافة إيموجي لو موجود في النص
-                const emojiMatch = btn.label.match(/:([^:]+):/);
-                if (emojiMatch) {
-                    button.setEmoji(emojiMatch[0]); 
-                }
-
-                if (currentRow.components.length < 5) {
-                    currentRow.addComponents(button);
-                } else {
-                    rows.push(currentRow);
-                    currentRow = new ActionRowBuilder().addComponents(button);
-                }
-            });
-
-            if (currentRow.components.length > 0) rows.push(currentRow);
-
-            // إرسال الرسالة
-            await message.channel.send({ embeds: [embed], components: rows });
-            
-            // مسح حرف الـ Y
-            await message.delete().catch(() => {}); 
-            
-        } catch (error) {
-            console.error("Error in Y command:", error);
+/**
+ * الدالة الأساسية لجلب الإعدادات
+ */
+function getConfig() {
+    try {
+        if (!fs.existsSync(CONFIG_PATH)) {
+            console.error("[config] ملف config.json غير موجود في المسار:", CONFIG_PATH);
+            return [];
         }
+
+        const raw = fs.readFileSync(CONFIG_PATH, "utf8");
+        const fixed = autoFix(raw);
+        const parsed = JSON.parse(fixed);
+
+        // التأكد إن البيانات دايمًا بترجع في شكل مصفوفة (Array)
+        return Array.isArray(parsed) ? parsed : [parsed];
+    } catch (err) {
+        console.error("[config] فشل في تحميل config.json:", err.message);
+        return [];
     }
-};
+}
+
+// تصدير الدالة باسم getConfig عشان ملف messageCreate يقدر يشوفها
+module.exports = { getConfig };
