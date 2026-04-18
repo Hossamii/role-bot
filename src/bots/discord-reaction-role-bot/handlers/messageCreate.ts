@@ -58,7 +58,7 @@ module.exports = async (client: Client, message: Message): Promise<void> => {
                     .setButtonAccessory(
                         new ButtonBuilder()
                             .setCustomId(`role_${btnIndex}`)
-                            .setLabel("Get Alerts")
+                            .setLabel("Notify Me")
                             .setStyle(styleMap[btn.style] ?? ButtonStyle.Primary)
                     );
                 
