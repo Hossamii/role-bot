@@ -1,7 +1,8 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require("discord.js");
 const { getConfig } = require("../util/getConfig");
 
-module.exports = async (message) => {
+module.exports = async (client, message) => {
+
     // التأكد إن الرسالة مش من بوت وإنها موجودة فعلاً
     if (!message || !message.author || message.author.bot) return;
 
