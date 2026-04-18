@@ -6,7 +6,7 @@
   "policy": "any",
   "buttons": [
     {
-      "label": "<:arrowup:1493310300484036606> Exclusive Value",
+      "label": "\<:arrowup:1493310300484036606> Exclusive Value",
       "description": "- Posts from high-value users",
       "style": "PRIMARY",
       "roleIds": ["1493310300484036606"]
